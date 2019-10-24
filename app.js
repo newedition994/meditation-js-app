@@ -18,6 +18,9 @@ const app = () => {
 
   outline.style.strokeDasharray = outlineLength;
   outline.style.strokeDashoffset = outlineLength;
+
+  // play sound
+  play.addEventListener("click", () => {});
 };
 
 app();
