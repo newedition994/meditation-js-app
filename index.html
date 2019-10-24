@@ -9,8 +9,17 @@
   </head>
   <body>
     <div class="app">
-      <div class="time-select"></div>
-      <div class="player-container"></div>
+      <div class="time-select">
+        <button data-time="120">2 Minutes</button>
+        <button data-time="300">5 Minutes</button>
+        <button data-time="600">10 Minutes</button>
+      </div>
+      <div class="player-container">
+        <audio class="song">
+          <source src="./sounds/rain.mp3" />
+        </audio>
+        <img src="./svg/play.svg" alt="play" />
+      </div>
       <div class="sound-picker"></div>
     </div>
 
