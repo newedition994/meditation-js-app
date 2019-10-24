@@ -56,4 +56,28 @@
   width: 30%;
   height: 10%;
   background: none;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.time-select button:hover {
+  color: black;
+  background: steelblue;
+}
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+}
+
+.sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+
+.sound-picker button:nth-child(2) {
+  background: #a14f49;
 }
