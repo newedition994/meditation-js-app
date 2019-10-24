@@ -23,7 +23,6 @@
 }
 
 .player-container {
-  background: lavender;
   position: relative;
 }
 
@@ -36,14 +35,25 @@
   pointer-events: none;
 }
 
-.time-select {
-  background: cornflowerblue;
-}
-
-.sound-picker {
-  background: hotpink;
+.time-display {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 50px;
 }
 
 .vid-container {
-  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
 }
