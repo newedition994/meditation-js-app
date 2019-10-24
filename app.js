@@ -9,6 +9,7 @@ const app = () => {
 
   // Time Display
   const tiemDisplay = document.querySelector(".time-display");
+  const timeSelect = document.querySelectorAll(".time-select button");
 
   // Get length of the outline
   const outlineLength = outline.getTotalLength();
@@ -22,6 +23,16 @@ const app = () => {
   // play sound
   play.addEventListener("click", () => {
     checkPlaying(song);
+  });
+
+  // selecting sound
+  timeSelect.forEach(option => {
+    option.addEventListener("click", function() {
+      fakeDuration = this.getAttribute("data-time");
+      tiemDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
+        fakeDuration % 60
+      )}`;
+    });
   });
 
   // function to pause and play the sound
