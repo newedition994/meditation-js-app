@@ -20,7 +20,22 @@ const app = () => {
   outline.style.strokeDashoffset = outlineLength;
 
   // play sound
-  play.addEventListener("click", () => {});
+  play.addEventListener("click", () => {
+    checkPlaying(song);
+  });
+
+  // function to pause and play the sound
+  const checkPlaying = song => {
+    if (song.paused) {
+      song.play();
+      video.play();
+      play.src = "./svg/pause.svg";
+    } else {
+      song.pause();
+      video.pause();
+      play.src = "./svg/play.svg";
+    }
+  };
 };
 
 app();
